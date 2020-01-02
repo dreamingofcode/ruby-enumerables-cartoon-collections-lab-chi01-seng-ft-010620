@@ -20,8 +20,10 @@ end
 end
 
 
-
-=begindef long_planeteer_calls(array_of_words)
+def long_planeteer_calls(array)
+   array.any? { |word| word.length > 4}
+end
+=begin def long_planeteer_calls(array_of_words)
   counter=0 
   if array_of_words.length <=4
     p false 
@@ -30,6 +32,9 @@ end
   end
 end
 =end
+
+
+
 def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
